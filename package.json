@@ -1,0 +1,25 @@
+{
+	"name": "morse-converter",
+	"private": true,
+	"scripts": {
+		"build": "turbo run build",
+		"dev": "turbo run dev",
+		"check-types": "turbo run check-types",
+		"lint": "biome check .",
+		"format": "biome check --write .",
+		"build:dev:android": "pnpm run --filter=mobile build:dev:android",
+		"start:dev:android": "pnpm run --filter=mobile start",
+		"build:prod:android": "pnpm run --filter=mobile build:prod:android"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.3.7",
+		"lefthook": "^2.0.4",
+		"prettier": "^3.6.2",
+		"turbo": "^2.6.1",
+		"typescript": "5.9.2"
+	},
+	"packageManager": "pnpm@9.0.0",
+	"engines": {
+		"node": ">=18"
+	}
+}
